@@ -13,6 +13,8 @@
 		F62A602E2259D64A00D3F74F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62A602D2259D64A00D3F74F /* Assets.xcassets */; };
 		F62A60312259D64A00D3F74F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62A602F2259D64A00D3F74F /* LaunchScreen.storyboard */; };
 		F62A60342259D64A00D3F74F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A60332259D64A00D3F74F /* main.m */; };
+		F62A60492259F1EA00D3F74F /* VFNoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A60482259F1EA00D3F74F /* VFNoteListViewController.m */; };
+		F62A604C2259F22800D3F74F /* VFNoteListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A604B2259F22800D3F74F /* VFNoteListTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		F62A60302259D64A00D3F74F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F62A60322259D64A00D3F74F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F62A60332259D64A00D3F74F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F62A60472259F1EA00D3F74F /* VFNoteListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFNoteListViewController.h; sourceTree = "<group>"; };
+		F62A60482259F1EA00D3F74F /* VFNoteListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFNoteListViewController.m; sourceTree = "<group>"; };
+		F62A604A2259F22800D3F74F /* VFNoteListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFNoteListTableViewCell.h; sourceTree = "<group>"; };
+		F62A604B2259F22800D3F74F /* VFNoteListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFNoteListTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 		F62A60232259D64600D3F74F /* VFNoteBook */ = {
 			isa = PBXGroup;
 			children = (
+				F62A603C2259F0C300D3F74F /* UI */,
+				F62A603B2259F0A500D3F74F /* BusinessLogic */,
 				F62A60242259D64600D3F74F /* AppDelegate.h */,
 				F62A60252259D64600D3F74F /* AppDelegate.m */,
 				F62A60272259D64600D3F74F /* ViewController.h */,
@@ -69,6 +77,104 @@
 				F62A60332259D64A00D3F74F /* main.m */,
 			);
 			path = VFNoteBook;
+			sourceTree = "<group>";
+		};
+		F62A603B2259F0A500D3F74F /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		F62A603C2259F0C300D3F74F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F62A60442259F17600D3F74F /* Settings */,
+				F62A60412259F14600D3F74F /* DetailNote */,
+				F62A603D2259F0E500D3F74F /* NoteList */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F62A603D2259F0E500D3F74F /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				F62A603E2259F10900D3F74F /* View */,
+			);
+			path = NoteList;
+			sourceTree = "<group>";
+		};
+		F62A603E2259F10900D3F74F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F62A60402259F12D00D3F74F /* Cell */,
+				F62A603F2259F11D00D3F74F /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F62A603F2259F11D00D3F74F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F62A60472259F1EA00D3F74F /* VFNoteListViewController.h */,
+				F62A60482259F1EA00D3F74F /* VFNoteListViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F62A60402259F12D00D3F74F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F62A604A2259F22800D3F74F /* VFNoteListTableViewCell.h */,
+				F62A604B2259F22800D3F74F /* VFNoteListTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F62A60412259F14600D3F74F /* DetailNote */ = {
+			isa = PBXGroup;
+			children = (
+				F62A60422259F15B00D3F74F /* View */,
+			);
+			path = DetailNote;
+			sourceTree = "<group>";
+		};
+		F62A60422259F15B00D3F74F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F62A60432259F16500D3F74F /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F62A60432259F16500D3F74F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F62A60442259F17600D3F74F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F62A60452259F18900D3F74F /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F62A60452259F18900D3F74F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F62A60462259F18F00D3F74F /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F62A60462259F18F00D3F74F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +249,8 @@
 			files = (
 				F62A60292259D64600D3F74F /* ViewController.m in Sources */,
 				F62A60342259D64A00D3F74F /* main.m in Sources */,
+				F62A604C2259F22800D3F74F /* VFNoteListTableViewCell.m in Sources */,
+				F62A60492259F1EA00D3F74F /* VFNoteListViewController.m in Sources */,
 				F62A60262259D64600D3F74F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
