@@ -7,8 +7,14 @@
 //
 
 #import "VFNoteListViewController.h"
-#import "VFNoteModel.h"
+
+#import "VFStorage.h"
+
 #import "VFNoteListTableViewCell.h"
+
+#import "VFNoteModel.h"
+
+
 
 @interface VFNoteListViewController ()
 
@@ -23,6 +29,13 @@
     // Do any additional setup after loading the view.
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+  [super viewWillAppear: animated];
+  
+  self.notes = [self.storage obtainNotes];
+  
+}
 
 #pragma mark - UITableViewDataSource
 
