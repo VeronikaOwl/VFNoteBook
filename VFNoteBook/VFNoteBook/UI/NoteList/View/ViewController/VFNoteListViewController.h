@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@protocol VFStorage;
 
-@interface VFNoteListViewController : UIViewController
+
+
+@interface VFNoteListViewController : UIViewController <UITableViewDataSource>
+
+@property (nonnull, nonatomic, strong) id <VFStorage> storage;
 
 @end
-
-NS_ASSUME_NONNULL_END

@@ -8,7 +8,17 @@
 
 #import "VFNoteListViewController.h"
 
+#import "VFStorage.h"
+
+#import "VFNoteListTableViewCell.h"
+
+#import "VFNoteModel.h"
+
+
+
 @interface VFNoteListViewController ()
+
+@property (nonatomic, strong) NSArray <VFNoteModel *> *notes;
 
 @end
 
@@ -19,14 +29,33 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void) viewWillAppear:(BOOL)animated
+{
+  [super viewWillAppear: animated];
+  
+  self.notes = [self.storage obtainNotes];
+  
 }
-*/
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger) tableView:(UITableView *)tableView
+  numberOfRowsInSection:(NSInteger)section
+{
+  return self.notes.count;
+}
+
+- (UITableViewCell *) tableView:(UITableView *)tableView
+          cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: NSStringFromClass([VFNoteListTableViewCell class])
+                                                          forIndexPath: indexPath];
+  
+  VFNoteModel *currentNote = [self.notes objectAtIndex: indexPath.row];
+  cell.textLabel.text = currentNote.name;
+  cell.detailTextLabel.text = currentNote.text;
+  
+  return cell;
+}
 
 @end
