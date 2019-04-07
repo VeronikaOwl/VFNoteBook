@@ -35,6 +35,7 @@
 		F62A604B2259F22800D3F74F /* VFNoteListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFNoteListTableViewCell.m; sourceTree = "<group>"; };
 		F62A6051225A0C0A00D3F74F /* VFNoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFNoteModel.h; sourceTree = "<group>"; };
 		F62A6052225A0C0A00D3F74F /* VFNoteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFNoteModel.m; sourceTree = "<group>"; };
+		F62A6059225A114800D3F74F /* VFStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFStorage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		F62A603B2259F0A500D3F74F /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				F62A6054225A10B700D3F74F /* Storages */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -196,6 +198,38 @@
 				F62A6052225A0C0A00D3F74F /* VFNoteModel.m */,
 			);
 			path = NoteModel;
+			sourceTree = "<group>";
+		};
+		F62A6054225A10B700D3F74F /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				F62A6057225A10FF00D3F74F /* FileSystem */,
+				F62A6056225A10F600D3F74F /* CoreData */,
+				F62A6055225A10D000D3F74F /* UserDefaults */,
+				F62A6059225A114800D3F74F /* VFStorage.h */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		F62A6055225A10D000D3F74F /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		F62A6056225A10F600D3F74F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F62A6057225A10FF00D3F74F /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FileSystem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
