@@ -15,6 +15,7 @@
 		F62A60342259D64A00D3F74F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A60332259D64A00D3F74F /* main.m */; };
 		F62A60492259F1EA00D3F74F /* VFNoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A60482259F1EA00D3F74F /* VFNoteListViewController.m */; };
 		F62A604C2259F22800D3F74F /* VFNoteListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A604B2259F22800D3F74F /* VFNoteListTableViewCell.m */; };
+		F62A6053225A0C0A00D3F74F /* VFNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A6052225A0C0A00D3F74F /* VFNoteModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		F62A60482259F1EA00D3F74F /* VFNoteListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFNoteListViewController.m; sourceTree = "<group>"; };
 		F62A604A2259F22800D3F74F /* VFNoteListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFNoteListTableViewCell.h; sourceTree = "<group>"; };
 		F62A604B2259F22800D3F74F /* VFNoteListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFNoteListTableViewCell.m; sourceTree = "<group>"; };
+		F62A6051225A0C0A00D3F74F /* VFNoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFNoteModel.h; sourceTree = "<group>"; };
+		F62A6052225A0C0A00D3F74F /* VFNoteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFNoteModel.m; sourceTree = "<group>"; };
+		F62A6059225A114800D3F74F /* VFStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFStorage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		F62A60232259D64600D3F74F /* VFNoteBook */ = {
 			isa = PBXGroup;
 			children = (
+				F62A604F225A0BC500D3F74F /* Models */,
 				F62A603C2259F0C300D3F74F /* UI */,
 				F62A603B2259F0A500D3F74F /* BusinessLogic */,
 				F62A60242259D64600D3F74F /* AppDelegate.h */,
@@ -82,6 +87,7 @@
 		F62A603B2259F0A500D3F74F /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				F62A6054225A10B700D3F74F /* Storages */,
 			);
 			path = BusinessLogic;
 			sourceTree = "<group>";
@@ -177,6 +183,55 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		F62A604F225A0BC500D3F74F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F62A6050225A0BD500D3F74F /* NoteModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F62A6050225A0BD500D3F74F /* NoteModel */ = {
+			isa = PBXGroup;
+			children = (
+				F62A6051225A0C0A00D3F74F /* VFNoteModel.h */,
+				F62A6052225A0C0A00D3F74F /* VFNoteModel.m */,
+			);
+			path = NoteModel;
+			sourceTree = "<group>";
+		};
+		F62A6054225A10B700D3F74F /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				F62A6057225A10FF00D3F74F /* FileSystem */,
+				F62A6056225A10F600D3F74F /* CoreData */,
+				F62A6055225A10D000D3F74F /* UserDefaults */,
+				F62A6059225A114800D3F74F /* VFStorage.h */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		F62A6055225A10D000D3F74F /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		F62A6056225A10F600D3F74F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		F62A6057225A10FF00D3F74F /* FileSystem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FileSystem;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,6 +307,7 @@
 				F62A604C2259F22800D3F74F /* VFNoteListTableViewCell.m in Sources */,
 				F62A60492259F1EA00D3F74F /* VFNoteListViewController.m in Sources */,
 				F62A60262259D64600D3F74F /* AppDelegate.m in Sources */,
+				F62A6053225A0C0A00D3F74F /* VFNoteModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
