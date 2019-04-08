@@ -16,6 +16,7 @@
 		F62A60492259F1EA00D3F74F /* VFNoteListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A60482259F1EA00D3F74F /* VFNoteListViewController.m */; };
 		F62A604C2259F22800D3F74F /* VFNoteListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A604B2259F22800D3F74F /* VFNoteListTableViewCell.m */; };
 		F62A6053225A0C0A00D3F74F /* VFNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A6052225A0C0A00D3F74F /* VFNoteModel.m */; };
+		F62A605F225A300500D3F74F /* VFUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A605D225A300500D3F74F /* VFUserDefaultsStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		F62A6051225A0C0A00D3F74F /* VFNoteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFNoteModel.h; sourceTree = "<group>"; };
 		F62A6052225A0C0A00D3F74F /* VFNoteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFNoteModel.m; sourceTree = "<group>"; };
 		F62A6059225A114800D3F74F /* VFStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFStorage.h; sourceTree = "<group>"; };
+		F62A605D225A300500D3F74F /* VFUserDefaultsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFUserDefaultsStorage.m; sourceTree = "<group>"; };
+		F62A605E225A300500D3F74F /* VFUserDefaultsStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFUserDefaultsStorage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +217,8 @@
 		F62A6055225A10D000D3F74F /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
+				F62A605E225A300500D3F74F /* VFUserDefaultsStorage.h */,
+				F62A605D225A300500D3F74F /* VFUserDefaultsStorage.m */,
 			);
 			path = UserDefaults;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				F62A60492259F1EA00D3F74F /* VFNoteListViewController.m in Sources */,
 				F62A60262259D64600D3F74F /* AppDelegate.m in Sources */,
 				F62A6053225A0C0A00D3F74F /* VFNoteModel.m in Sources */,
+				F62A605F225A300500D3F74F /* VFUserDefaultsStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

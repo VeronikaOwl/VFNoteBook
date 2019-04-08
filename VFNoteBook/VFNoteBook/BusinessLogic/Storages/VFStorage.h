@@ -10,12 +10,11 @@
 
 @class VFNoteModel;
 
-
-
 /**
  Протокол типового хранилища
  */
 @protocol VFStorage <NSObject>
+
 
 /**
  получить модели заметок из хранилища
@@ -23,8 +22,6 @@
  @return Массив моделей заметок
  */
 - (nonnull NSArray <VFNoteModel *> *) obtainNotes;
-
-
 /**
  Сохраняем заметки в хранилище
 
