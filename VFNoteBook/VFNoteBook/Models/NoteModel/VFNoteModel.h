@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface VFNoteModel : NSObject
+@interface VFNoteModel : NSObject <NSCoding>
 
 @property (nonnull, nonatomic, copy, readonly) NSString *name;
 @property (nonnull, nonatomic, copy, readonly) NSString *text;
@@ -18,6 +18,6 @@
 - (nonnull instancetype) init __unavailable;
 - (nonnull instancetype) initWithName: (nonnull NSString *) name
                                  text: (nonnull NSString *) text
-                           identifier: (NSUInteger) identifier NS_DESIGNATED_INITIALIZER;
+                           identifier: (NSUInteger) identifier;
 
 @end
