@@ -8,7 +8,7 @@
 
 #import "VFNoteListViewController.h"
 
-#import "VFStorage.h"
+#import "VFNoteServiceImplementation.h"
 
 #import "VFNoteListTableViewCell.h"
 
@@ -24,6 +24,21 @@
 
 @implementation VFNoteListViewController
 
+#pragma mark - Inits
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+  self = [super initWithCoder: aDecoder];
+  
+  if (self != nil) {
+    _noteService = [[VFNoteServiceImplementation alloc] init];
+  }
+  return self;
+}
+
+
+
+#pragma mark - Life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -33,7 +48,7 @@
 {
   [super viewWillAppear: animated];
   
-  self.notes = [self.storage obtainNotes];
+  self.notes = [self.noteService obtainNotes];
   
 }
 

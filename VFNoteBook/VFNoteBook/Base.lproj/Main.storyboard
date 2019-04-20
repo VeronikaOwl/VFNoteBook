@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-825" y="134"/>
         </scene>
-        <!--Note List View Controller-->
+        <!--NoteBook-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="VFNoteListViewController" sceneMemberID="viewController">
@@ -78,7 +78,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3hH-6I-hvm"/>
+                    <navigationItem key="navigationItem" title="NoteBook" id="3hH-6I-hvm"/>
+                    <connections>
+                        <outlet property="noteTableView" destination="PVd-YL-qtL" id="V0G-Hq-g7v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

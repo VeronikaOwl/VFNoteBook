@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol VFStorage;
-
+@protocol VFNoteService;
 
 
 @interface VFNoteListViewController : UIViewController <UITableViewDataSource>
 
-@property (nonnull, nonatomic, strong) id <VFStorage> storage;
+
+@property (nonnull, nonatomic, strong) id <VFNoteService> noteService;
+
+@property (nullable, nonatomic, weak) IBOutlet UITableView *noteTableView;
 
 @end
