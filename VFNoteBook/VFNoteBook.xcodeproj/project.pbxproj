@@ -17,6 +17,7 @@
 		F62A604C2259F22800D3F74F /* VFNoteListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A604B2259F22800D3F74F /* VFNoteListTableViewCell.m */; };
 		F62A6053225A0C0A00D3F74F /* VFNoteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A6052225A0C0A00D3F74F /* VFNoteModel.m */; };
 		F62A605F225A300500D3F74F /* VFUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F62A605D225A300500D3F74F /* VFUserDefaultsStorage.m */; };
+		F6750BB8225B8A600054E9A8 /* VFNoteServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6750BB7225B8A600054E9A8 /* VFNoteServiceImplementation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,9 @@
 		F62A6059225A114800D3F74F /* VFStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFStorage.h; sourceTree = "<group>"; };
 		F62A605D225A300500D3F74F /* VFUserDefaultsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFUserDefaultsStorage.m; sourceTree = "<group>"; };
 		F62A605E225A300500D3F74F /* VFUserDefaultsStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFUserDefaultsStorage.h; sourceTree = "<group>"; };
+		F6750BB5225B85250054E9A8 /* VFNoteService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFNoteService.h; sourceTree = "<group>"; };
+		F6750BB6225B8A600054E9A8 /* VFNoteServiceImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFNoteServiceImplementation.h; sourceTree = "<group>"; };
+		F6750BB7225B8A600054E9A8 /* VFNoteServiceImplementation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFNoteServiceImplementation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		F62A603B2259F0A500D3F74F /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				F6750BB3225B84BD0054E9A8 /* Services */,
 				F62A6054225A10B700D3F74F /* Storages */,
 			);
 			path = BusinessLogic;
@@ -237,6 +242,24 @@
 			path = FileSystem;
 			sourceTree = "<group>";
 		};
+		F6750BB3225B84BD0054E9A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F6750BB4225B84E40054E9A8 /* NoteService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F6750BB4225B84E40054E9A8 /* NoteService */ = {
+			isa = PBXGroup;
+			children = (
+				F6750BB5225B85250054E9A8 /* VFNoteService.h */,
+				F6750BB6225B8A600054E9A8 /* VFNoteServiceImplementation.h */,
+				F6750BB7225B8A600054E9A8 /* VFNoteServiceImplementation.m */,
+			);
+			path = NoteService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F62A60292259D64600D3F74F /* ViewController.m in Sources */,
+				F6750BB8225B8A600054E9A8 /* VFNoteServiceImplementation.m in Sources */,
 				F62A60342259D64A00D3F74F /* main.m in Sources */,
 				F62A604C2259F22800D3F74F /* VFNoteListTableViewCell.m in Sources */,
 				F62A60492259F1EA00D3F74F /* VFNoteListViewController.m in Sources */,
