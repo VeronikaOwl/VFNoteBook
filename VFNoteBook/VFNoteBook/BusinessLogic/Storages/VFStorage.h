@@ -16,12 +16,33 @@
 @protocol VFStorage <NSObject>
 
 
+#pragma mark - Identifier
+
 /**
- получить модели заметок из хранилища
+ Получить идентификатор для заметки
+
+ @return Идентификатор заметки
+ */
+- (NSUInteger) takeNoteIdentifier;
+
+/**
+ Сохраняем идентификатор заметки
+
+ @param identifier Идентификатор заметки
+ */
+- (void) storeNoteIdentifier: (NSUInteger) identifier;
+
+
+
+#pragma mark - Notes
+
+/**
+ Получить модели заметок из хранилища
 
  @return Массив моделей заметок
  */
 - (nonnull NSArray <VFNoteModel *> *) obtainNotes;
+
 /**
  Сохраняем заметки в хранилище
 

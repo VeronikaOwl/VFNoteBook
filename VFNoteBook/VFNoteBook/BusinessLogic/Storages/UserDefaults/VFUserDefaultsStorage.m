@@ -10,6 +10,7 @@
 
 
 static NSString *const cNotesArrayKey = @"NotesArrayKey";
+static NSString *const cIdentifierKey = @"IdentifierKey";
 
 @implementation VFUserDefaultsStorage
 
@@ -28,6 +29,23 @@ static NSString *const cNotesArrayKey = @"NotesArrayKey";
 }
 
 #pragma mark - VFStorage methods
+
+#pragma mark - Identifier
+
+
+- (NSUInteger) takeNoteIdentifier
+{
+  return [self.userDefaults integerForKey: cIdentifierKey];
+}
+
+- (void) storeNoteIdentifier: (NSUInteger) identifier
+{
+  [self.userDefaults setInteger: identifier
+                         forKey: cIdentifierKey];
+}
+
+
+#pragma mark - Notes
 
 - (NSArray<VFNoteModel *> *)obtainNotes
 {
